@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: flex; /* Sử dụng flexbox để hiển thị sản phẩm trên một dòng */
+    justify-content: space-between; /* Căn giữa các sản phẩm */
+    flex-wrap: nowrap; /* Không cho phép xuống dòng */
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 18%; /* Đặt chiều rộng cho mỗi sản phẩm */
+    margin: 10px; /* Thêm khoảng cách giữa các sản phẩm */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background: #0056b3;
+}
